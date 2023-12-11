@@ -1173,7 +1173,7 @@ section {
   margin-left: 2px;
 }
 .course_tag:hover {
-  background: #2c2b31;
+  background: rgba(11, 52, 75, 255);
 }
 .course_tag a {
   display: block;
@@ -1181,7 +1181,7 @@ section {
   padding-right: 19px;
   line-height: 31px;
   font-size: 14px;
-  color: rgba(11, 52, 75, 255);
+  color: white;
   font-weight: 400;
 }
 .course_price span {
@@ -1209,7 +1209,8 @@ section {
   transition: all 200ms ease;
 }
 .course_title h3 a:hover {
-  color: #ff6600;
+  color: rgba(119, 191, 0, 255);
+  background-color: rgba(11, 52, 75, 255);
 }
 .course_text {
   margin-top: 18px;
@@ -1242,19 +1243,22 @@ section {
   transition: all 200ms ease;
 }
 .course_author_name a:hover {
-  color: #ff6600;
+  color: rgba(119, 191, 0, 255);
 }
 .courses_slider_nav {
   position: absolute;
   top: 50%;
-  width: 51px;
-  height: 51px;
+  width: 30px;
+  height: 30px;
   background: rgba(119, 191, 0, 255);
   text-align: center;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .courses_slider_nav:hover {
-  background: #ff6600;
+  background: rgba(119, 191, 0, 255);
 }
 .courses_slider_nav i {
   font-size: 18px;
@@ -1262,10 +1266,12 @@ section {
   color: rgba(11, 52, 75, 255);
 }
 .courses_slider_prev {
-  left: -161px;
+  left: 0;
+  z-index: 999;
 }
 .courses_slider_next {
-  right: -161px;
+  right: 0;
+  z-index: 999;
 }
 
 /*********************************

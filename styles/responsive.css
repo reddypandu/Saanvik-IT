@@ -128,7 +128,7 @@
     padding-right: 0;
   }
   .courses_slider_nav {
-    display: none;
+    /* display: none; */
   }
   .milestone_col:not(:last-child) {
     margin-bottom: 30px;
