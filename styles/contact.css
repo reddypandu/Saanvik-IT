@@ -559,7 +559,7 @@ section {
 }
 .hamburger i {
   font-size: 20px;
-  color: #353535;
+  color: rgba(119, 191, 0, 255);
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
