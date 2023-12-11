@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Page in HTML with CSS Code Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/login.css" />
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="box-form">
+    <div class="left">
+      <div class="overlay">
+        <h1>Welcome To</h1>
+        <a href="index.html"><img style="width: 180px" src="images/logo.png" /></a>
+        <p>
+          Saanvik IT is to make the world of coding more approachable and
+          understandable for aspirational developers everywhere.
+        </p>
+        <span>
+          <p>login with social media</p>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <button class="google-button">Login Google</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="right">
+      <h5>Login</h5>
+      <p>
+        Don't have an account?
+        <a class="text-account" href="register.html"> Creat Your Account</a>
+        it takes less than a minute
+      </p>
+      <div class="inputs">
+        <input type="email" placeholder="Email Id" />
+        <br />
+        <input type="password" placeholder="password" />
+      </div>
+
+      <br />
+
+      <div class="remember-me--forget-password">
+        <!-- Angular -->
+        <label>
+          <input type="checkbox" name="item" checked />
+          <span class="text-checkbox">Remember</span>
+        </label>
+        <p style="margin-right: -6px">
+          <a style="text-decoration: none; color:rgba(11, 52, 75, 255);" href="forgot.html">
+            Forgot password?</a>
+        </p>
+      </div>
+
+      <br />
+      <button>Login</button>
+      <button style="float: left">
+        <a href="index.html">Back</a>
+      </button>
+    </div>
+  </div>
+  <!-- partial -->
+</body>
+
+</html>

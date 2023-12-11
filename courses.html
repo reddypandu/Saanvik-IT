@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Courses</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Elearn project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/bootstrap4/bootstrap.min.css"
+    />
+    <link
+      href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="plugins/video-js/video-js.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/courses.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/courses_responsive.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Top Bar -->
+
+      <!-- Header Content -->
+      <div class="header_container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div
+                class="header_content d-flex flex-row align-items-center justify-content-start"
+              >
+                <div class="logo_container">
+                  <a href="#">
+                    <div
+                      class="logo_content d-flex flex-row align-items-end justify-content-start"
+                    >
+                      <div style="width: 150px" class="logo_img">
+                        <a href="index.html"
+                          ><img src="images/logo.png" alt=""
+                        /></a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <nav class="main_nav_contaner ml-auto">
+                  <ul class="main_nav">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li class="active"><a href="courses.html">courses</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                      <a class="hover" href="./login.html">Login/Register</a>
+                    </li>
+                  </ul>
+                  <div class="search_button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </div>
+
+                  <!-- Hamburger -->
+
+                  <div class="hamburger menu_mm">
+                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Search Panel -->
+      <div class="header_search_container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div
+                class="header_search_content d-flex flex-row align-items-center justify-content-end"
+              >
+                <form action="#" class="header_search_form">
+                  <input
+                    type="search"
+                    class="search_input"
+                    placeholder="Search"
+                    required="required"
+                  />
+                  <button
+                    class="header_search_button d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu -->
+
+    <div
+      class="menu d-flex flex-column align-items-center justify-content-start text-center menu_mm trans_400"
+    >
+      <div class="menu_close_container">
+        <div class="menu_close">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="search">
+        <form action="#" class="header_search_form menu_mm">
+          <input
+            type="search"
+            class="search_input menu_mm"
+            placeholder="Search"
+            required="required"
+          />
+          <button
+            class="header_search_button d-flex flex-column align-items-start justify-content-center menu_mm"
+          >
+            <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+      <nav class="menu_nav">
+        <ul class="menu_mm">
+          <li class="menu_mm"><a href="index.html">Home</a></li>
+          <li class="menu_mm"><a href="about.html">about</a></li>
+          <li class="menu_mm"><a href="courses.html">Courses</a></li>
+
+          <li class="menu_mm"><a href="news.html">News</a></li>
+
+          <li class="menu_mm"><a href="contact.html">Contact</a></li>
+          <li class="menu_mm"><a href="./login.html">Login/Register</a></li>
+        </ul>
+      </nav>
+      <div class="menu_extra">
+        <div class="menu_phone">
+          <span class="menu_title">phone:</span>(+91) 9513184144
+        </div>
+        <div class="menu_social">
+          <span class="menu_title">follow us</span>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home -->
+
+    <div class="home">
+      <!-- Background image artist https://unsplash.com/@thepootphotographer -->
+      <div
+        class="home_background parallax_background parallax-window"
+        data-parallax="scroll"
+        data-image-src="images/course.JPG"
+        data-speed="0.8"
+      ></div>
+      <div class="home_container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="home_content text-center">
+                <div class="home_title">Courses</div>
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Courses</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Courses -->
+
+    <div class="courses">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section_title text-center">
+              <h2>Choose your course</h2>
+            </div>
+            <div class="section_subtitle">
+              "Empower your future with tailored learning paths, expert
+              instructors, and cutting-edge content designed to elevate your
+              skills and career prospects."
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Search -->
+        <div class="row">
+          <div class="col">
+            <div class="course_search">
+              <form
+                action="#"
+                class="course_search_form d-flex flex-md-row flex-column align-items-start justify-content-between"
+              >
+                <div>
+                  <input
+                    type="text"
+                    class="course_input"
+                    placeholder="Course"
+                    required="required"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="course_input"
+                    placeholder="Level"
+                    required="required"
+                  />
+                </div>
+                <button class="course_button">
+                  <span>search course</span
+                  ><span class="button_arrow"
+                    ><i class="fa fa-angle-right" aria-hidden="true"></i
+                  ></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Course -->
+        <div class="row featured_row">
+          <div class="col-lg-6 featured_col">
+            <div class="featured_content">
+              <div
+                class="featured_header d-flex flex-row align-items-center justify-content-start"
+              >
+                <div class="featured_tag"><a href="#">Featured</a></div>
+              </div>
+              <div class="featured_title">
+                <h3><a href="courses.html">Microsoft Azure</a></h3>
+              </div>
+              <div class="featured_text">
+                "Unlock the potential of cloud computing with our Microsoft
+                Azure course, where you'll master essential skills for building,
+                deploying, and managing applications on the robust Azure
+                platform. Gain expertise in this industry-leading technology,
+                propelling your career into the forefront of cloud innovation."
+              </div>
+              <div
+                class="featured_footer d-flex align-items-center justify-content-start"
+              >
+                <div class="featured_author_image">
+                  <img src="images/featured_author.jpg" alt="" />
+                </div>
+                <div class="featured_author_name">
+                  By <a href="#">Ajay Mantri</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 featured_col">
+            <!-- Background image artist https://unsplash.com/@jtylernix -->
+            <div
+              class="featured_background"
+              style="background-image: url(images/featured0.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="row courses_row">
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img src="images/original1/Java.jpg" alt="" />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Java Full Stack</a></h3>
+                </div>
+                <div class="course_text">
+                  " A Java Full Stack course covers both frontend (HTML, CSS,
+                  JavaScript) and backend (Java, Spring Boot) development,
+                  integrating databases, APIs, and deployment for creating
+                  robust web applications."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img src="images/original1/Python.jpg" alt="" />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">New</a></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Python</a></h3>
+                </div>
+                <div class="course_text">
+                  " A Python course covers fundamental programming concepts and
+                  syntax, enabling learners to build applications, work with
+                  data using libraries like Pandas or NumPy, and explore machine
+                  learning or web development with frameworks like Django or
+                  Flask."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img src="images/original1/devops.png" alt="" />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Devops</a></h3>
+                </div>
+                <div class="course_text">
+                  "A DevOps course focuses on automation, collaboration, and
+                  tooling to streamline software development, emphasizing
+                  practices like continuous integration/continuous deployment
+                  (CI/CD), infrastructure as code (IaC), and containerization
+                  with tools like Docker and Kubernetes."
+                </div>
+                <!--<div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                >
+                  <div class="course_author_image">
+                    <img
+                      src="images/course_author_3.jpg"
+                      alt="https://unsplash.com/@anthonytran"
+                    />
+                  </div>
+                  <div class="course_author_name">
+                    By <a href="#">Shravani Ankala</a>
+                  </div>
+                  <div class="course_sales ml-auto"><span>352</span> Sales</div>
+                </div>-->
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img src="images/original1/AzureDevops.jpg" alt="" />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Azure DevOps</a></h3>
+                </div>
+                <div class="course_text">
+                  "An Azure DevOps course covers the Azure platform's tools and
+                  services for end-to-end software delivery, including version
+                  control, agile planning, automated builds/deployments, and
+                  integration with cloud resources, facilitating efficient
+                  development and collaboration within teams."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img src="images/original1/docker.jpg" alt="" />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">New</a></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Docker</a></h3>
+                </div>
+                <div class="course_text">
+                  "A Docker course teaches containerization principles, allowing
+                  learners to create, deploy, and manage applications in
+                  isolated environments for consistent development and
+                  deployment across various platforms and infrastructure
+                  setups."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img src="images/original1/Kubernetes.jpg" alt="" />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Kubernetes</a></h3>
+                </div>
+                <div class="course_text">
+                  "A Kubernetes course delves into orchestration, managing
+                  containerized applications at scale, offering skills in
+                  deploying, scaling, and maintaining resilient systems across
+                  diverse environments using automated container orchestration
+                  and management."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Terraform.png"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Terraform</a></h3>
+                </div>
+                <div class="course_text">
+                  "A Terraform course focuses on infrastructure as code,
+                  enabling learners to define and provision cloud resources
+                  across various providers, ensuring consistent and scalable
+                  deployments through declarative configuration and automation."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/AWS.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3>
+                    <a href="courses.html">Amazon Web Services</a>
+                  </h3>
+                </div>
+                <div class="course_text">
+                  " Master the intricacies of AWS with our comprehensive course,
+                  guiding you through cloud computing's limitless possibilities,
+                  from fundamentals to advanced applications. Unlock your
+                  potential and navigate the AWS ecosystem with confidence
+                  through our expert-led, hands-on learning experience."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Linux.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Linux</a></h3>
+                </div>
+                <div class="course_text">
+                  " Linux is designed to empower you with essential skills and
+                  knowledge, from command-line basics to system administration,
+                  shaping you into a proficient Linux user. Dive deep into
+                  Linux's versatility and harness its power in our guided,
+                  practical learning environment, tailored for both beginners
+                  and seasoned tech enthusiasts."
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/github.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">GitHub</a></h3>
+                </div>
+                <div class="course_text">
+                  "Master the art of collaborative coding and version control
+                  with our GitHub course! Explore seamless project management,
+                  branching strategies, and collaborative workflows to elevate
+                  your programming expertise."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/git.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Git</a></h3>
+                </div>
+                <div class="course_text">
+                  "Unlock the power of version control with our Git course! Dive
+                  into fundamental concepts, branching strategies, and
+                  collaboration techniques to streamline your coding projects
+                  and elevate your development skills."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/GitHubActions.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">GitHub Actions:</a></h3>
+                </div>
+                <div class="course_text">
+                  "Discover the automation magic with our GitHub Actions course!
+                  Learn to streamline workflows, automate tasks, and optimize
+                  your development pipeline using this powerful tool. Elevate
+                  your coding efficiency and project management skills today!"
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Ansible.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Ansible</a></h3>
+                </div>
+                <div class="course_text">
+                  "Empower your infrastructure management skills with our
+                  Ansible course! Dive into automation, configuration, and
+                  orchestration techniques, mastering the art of efficiently
+                  managing IT infrastructure. Level up your expertise and
+                  streamline your deployment processes."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/PowerBI.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Power BI</a></h3>
+                </div>
+                <div class="course_text">
+                  "Unleash the potential of your data with our Power BI course!
+                  Explore dynamic visualizations, advanced analytics, and
+                  impactful insights, empowering you to transform raw data into
+                  actionable intelligence. Elevate your data analysis skills and
+                  make informed decisions with confidence."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Snowflake.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Snowflake</a></h3>
+                </div>
+                <div class="course_text">
+                  "Embark on a transformative journey in data warehousing with
+                  our Snowflake course! Dive into the world of cloud-native
+                  architecture, scalable data storage, and powerful analytics.
+                  Master the art of harnessing Snowflake's capabilities to
+                  unlock the full potential of your data infrastructure."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/AzureBicep.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">AzureBicep</a></h3>
+                </div>
+                <div class="course_text">
+                  "Experience the future of infrastructure as code with our
+                  Azure Bicep course! Delve into streamlined Azure resource
+                  deployment, enhanced readability, and simplified management.
+                  Unlock the potential of declarative syntax and elevate your
+                  cloud infrastructure expertise."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Prometheus.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Prometheus</a></h3>
+                </div>
+                <div class="course_text">
+                  "Embark on a monitoring revolution with our Prometheus course!
+                  Explore the realm of scalable, reliable metrics and alerting.
+                  Master the art of observability and gain insights into
+                  application performance. Elevate your monitoring skills and
+                  ensure system reliability like never before."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <!-- Course -->
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Grafana.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Grafana</a></h3>
+                </div>
+                <div class="course_text">
+                  "Discover the art of visualizing data insights with our
+                  Grafana course! Dive into powerful dashboard creation,
+                  real-time analytics, and diverse data source integration.
+                  Unlock the potential of Grafana to craft compelling visual
+                  narratives and gain actionable insights from your metrics and
+                  logs."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Tableau.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Tableau</a></h3>
+                </div>
+                <div class="course_text">
+                  "Unleash the power of data visualization with our Tableau
+                  course! Explore intuitive dashboards, interactive analytics,
+                  and storytelling with data. Master the art of transforming raw
+                  data into compelling visual narratives, empowering better
+                  decision-making and insights across industries."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/SQL.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">SQL</a></h3>
+                </div>
+                <div class="course_text">
+                  "Unlock the language of data manipulation and management with
+                  our SQL course! Dive into querying databases, mastering data
+                  retrieval, and learning the fundamentals of database design.
+                  Elevate your skills in handling and analyzing data, essential
+                  for various roles in the tech and business world."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="course">
+              <div class="course_image">
+                <img
+                  src="images/original1/Azure Powershell.jpg"
+                  alt="https://unsplash.com/@annademy"
+                />
+              </div>
+              <div class="course_body">
+                <div
+                  class="course_header d-flex flex-row align-items-center justify-content-start"
+                >
+                  <div class="course_tag"><a href="#">Featured</a></div>
+                  <div class="course_price ml-auto"></div>
+                </div>
+                <div class="course_title">
+                  <h3><a href="courses.html">Azure Powershell</a></h3>
+                </div>
+                <div class="course_text">
+                  "Empower your cloud management capabilities with our Azure
+                  PowerShell course! Dive into automation, scripting, and
+                  seamless Azure resource management. Master the art of
+                  controlling and configuring Azure services, optimizing
+                  workflows, and accelerating your cloud operations with
+                  efficiency and precision."
+                </div>
+                <div
+                  class="course_footer d-flex align-items-center justify-content-start"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="row">
+          <div class="col">
+            <div class="courses_paginations">
+              <ul>
+                <li class="active"><a href="#">01</a></li>
+                <li><a href="#">02</a></li>
+                <li><a href="#">03</a></li>
+                <li><a href="#">04</a></li>
+                <li><a href="#">05</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- About -->
+          <div class="col-lg-3 footer_col">
+            <div class="footer_about">
+              <div class="logo_container">
+                <a href="#">
+                  <div
+                    class="logo_content d-flex flex-row align-items-end justify-content-start"
+                  >
+                    <div style="width: 150px" class="logo_img">
+                      <img src="images/logo.png" alt="" />
+                    </div>
+                    <div class="logo_text"></div>
+                  </div>
+                </a>
+              </div>
+              <div class="footer_about_text">
+                <p>
+                  Saanvik IT is to make the world of coding more approachable
+                  and understandable for aspirational developers everywhere.
+                </p>
+              </div>
+              <div class="footer_social">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-google-plus" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-pinterest" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+
+          <div class="col-lg-3 footer_col">
+            <div class="footer_links">
+              <div class="footer_title">Quick menu</div>
+              <ul class="footer_list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Facts</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 footer_col">
+            <div class="footer_links">
+              <div class="footer_title">Useful Links</div>
+              <ul class="footer_list">
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="news.html">News</a></li>
+
+                <li><a href="#">Links</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 footer_col">
+            <div class="footer_contact">
+              <div class="footer_title">Contact Us</div>
+              <div class="footer_contact_info">
+                <div class="footer_contact_item">
+                  <div class="footer_contact_title">Address:</div>
+                  <div class="footer_contact_line">
+                    We works, 1 st Floor, Hyderabad, Telangana 500032
+                  </div>
+                </div>
+                <div class="footer_contact_item">
+                  <div class="footer_contact_title">Phone:</div>
+                  <div class="footer_contact_line">(+91) 9513184144​</div>
+                </div>
+                <div class="footer_contact_item">
+                  <div class="footer_contact_title">Email:</div>
+                  <div class="footer_contact_line">
+                    saanvikIT@gmail.com​
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy_right text-center">
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved | This template is made with
+
+        <i class="fa fa-heart-o" aria-hidden="true"></i> by
+        <a href="www.thepatternscompany.com" target="_blank"
+          >The Patterns Infotech</a
+        >
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="styles/bootstrap4/popper.js"></script>
+    <script src="styles/bootstrap4/bootstrap.min.js"></script>
+    <script src="plugins/easing/easing.js"></script>
+    <script src="plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="js/courses.js"></script>
+  </body>
+</html>
