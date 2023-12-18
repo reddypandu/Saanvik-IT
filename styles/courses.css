@@ -392,7 +392,7 @@ section {
 
 .header_container {
   width: 100%;
-  background: rgba(11, 52, 75, 255);
+  background: white;
 }
 .header_content {
   height: 90px;
@@ -834,7 +834,7 @@ section {
 
 .courses {
   width: 100%;
-  background: rgba(11, 52, 75, 255);
+  /* background: ; */
   padding-top: 101px;
   padding-bottom: 100px;
 }
@@ -1077,6 +1077,7 @@ section {
 }
 .course_image {
   width: 100%;
+  background-color: rgba(11, 52, 75, 255);
 }
 .course_image img {
   max-width: 100%;

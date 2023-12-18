@@ -61,6 +61,7 @@
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
+  background-color: rgba(119, 191, 0, 255);
 }
 .owl-carousel .owl-nav.disabled,
 .owl-carousel .owl-dots.disabled {
