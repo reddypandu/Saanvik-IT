@@ -78,18 +78,35 @@ $(document).ready(function () {
     }
   }
 
-  $(document).ready(function () {
-    var navbar = $(".header_container");
-    var scrollThreshold = 100;
+  //loader
+  var loader = function () {
+    // Show loader
+    $("#ftco-loader").addClass("show");
 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > scrollThreshold) {
-        navbar.addClass("fixed");
-      } else {
-        navbar.removeClass("fixed");
-      }
-    });
-  });
+    // Hide loader after document is fully loaded
+    window.onload = function () {
+      setTimeout(function () {
+        if ($("#ftco-loader").length > 0) {
+          $("#ftco-loader").removeClass("show");
+        }
+      }, 1000);
+    };
+  };
+
+  loader();
+
+  //   $(document).ready(function () {
+  //     var navbar = $(".header_container");
+  //     var scrollThreshold = 100;
+
+  //     $(window).scroll(function () {
+  //       if ($(this).scrollTop() > scrollThreshold) {
+  //         navbar.addClass("fixed");
+  //       } else {
+  //         navbar.removeClass("fixed");
+  //       }
+  //     });
+  //   });
 
   /* 
 
