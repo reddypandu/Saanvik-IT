@@ -49,7 +49,7 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   background: #35bbef;
 
@@ -68,9 +68,9 @@ ul {
 }
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 15x;
   line-height: 1.928;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   -webkit-font-smoothing: antialiased;
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
@@ -80,12 +80,13 @@ p a {
   display: inline;
   position: relative;
   color: inherit;
-  border-bottom: solid 1px #ffa07f;
+  border-bottom: solid 1px rgba(119, 191, 0, 255);
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
+  font-size: 20px;
 }
 p:last-of-type {
   margin-bottom: 0;
@@ -326,7 +327,7 @@ section {
   font-weight: 600;
 }
 .section_subtitle {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   text-align: center;
   margin-top: 66px;
@@ -783,7 +784,7 @@ section {
   transition: all 200ms ease;
 }
 .menu_nav ul li a:hover {
-  color: rgba(119, 191, 0, 255);
+  color: white;
 }
 .menu .search {
   width: 100%;
@@ -870,12 +871,12 @@ section {
   transition: all 200ms ease;
 }
 .header_search_button:hover i {
-  color: rgba(119, 191, 0, 255);
+  color: #35bbef;
 }
 .menu_extra {
   position: absolute;
   right: 60px;
-  bottom: 30px;
+  bottom: 50px;
 }
 .menu_phone,
 .menu_social {
@@ -891,6 +892,7 @@ section {
 }
 .menu_social ul {
   display: inline-block;
+  margin-top: 10px;
 }
 .menu_social ul li {
   display: inline-block;
@@ -1762,13 +1764,14 @@ section {
 .footer {
   width: 100%;
   padding-top: 60px;
+  border-top: 1px solid white;
   /*padding-bottom: 90px;*/
-  background-color: rgba(11, 52, 75, 255);
+  /* background-color: rgba(11, 52, 75, 255); */
 }
 .footer .logo_container {
-  position: absolute;
+  /* position: absolute;
   top: -20px;
-  left: 0;
+  left: 0; */
 }
 .footer_about_text {
   padding-top: 49px;
@@ -1780,19 +1783,23 @@ section {
   display: inline-block;
 }
 .footer_social ul li:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 15px;
 }
 .footer_social ul li a i {
-  font-size: 25px;
-  color: rgba(119, 191, 0, 255);
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
+  background-color: rgba(119, 191, 0, 255);
 }
 .footer_social ul li a i:hover {
-  color: white;
+  color: rgba(11, 52, 75, 255);
+  background-color: white;
 }
 .copyright {
   font-size: 14px;
@@ -1802,8 +1809,9 @@ section {
 }
 .footer_title {
   font-size: 18px;
+  display: inline-block;
   font-weight: 900;
-  border-bottom: solid gray 1px;
+  border-bottom: solid rgba(119, 191, 0, 255) 1px;
   color: white;
   text-transform: uppercase;
   text-shadow: 0 2px 4px black, 2px 2px 4px black, 7px 1px 6px black,
@@ -1817,8 +1825,8 @@ section {
   margin-bottom: 15px;
 }
 .footer_list li a {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   color: white;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -1842,7 +1850,7 @@ section {
   color: rgba(119, 191, 0, 255);
 }
 .footer_contact_line {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: white;
   margin-top: 3px;
@@ -1859,9 +1867,11 @@ section {
   height: 80px;
   width: 100%;
   padding-top: 30px;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
   color: white;
+  border-top: 1px solid white;
+  background-color: rgba(11, 52, 75, 255);
 }

@@ -1,642 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>News</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Elearn project" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="styles/bootstrap4/bootstrap.min.css"
-    />
-    <link
-      href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="plugins/video-js/video-js.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" type="text/css" href="styles/news.css" />
-    <link rel="stylesheet" type="text/css" href="styles/news_responsive.css" />
-  </head>
-  <body>
-    <header class="header">
-      <!-- Top Bar -->
 
-      <!-- Header Content -->
-      <div class="header_container">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div
-                class="header_content d-flex flex-row align-items-center justify-content-start"
-              >
-                <div class="logo_container">
-                  <a href="#">
-                    <div
-                      class="logo_content d-flex flex-row align-items-end justify-content-start"
-                    >
-                      <div style="width: 150px" class="logo_img">
-                        <a href="index.html"
-                          ><img src="images/logo.png" alt=""
-                        /></a>
-                      </div>
+<head>
+  <title>News</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Elearn project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
+  <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="styles/news.css" />
+  <link rel="stylesheet" type="text/css" href="styles/all.css" />
+  <link rel="stylesheet" type="text/css" href="styles/news_responsive.css" />
+</head>
+
+<body>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <img src="images/logo_icon.png" alt="" style="width:150px;" />
+    <div class="loader"></div>
+  </div>
+  <!--loader-->
+  <header class="header">
+    <!-- Top Bar -->
+
+    <!-- Header Content -->
+    <div class="header_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header_content d-flex flex-row align-items-center justify-content-around">
+              <div class="logo_container">
+                <a href="#">
+                  <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                    <div style="width: 150px;" class="logo_img">
+                      <a href="index.html"><img src="images/logo.png" style="" /></a>
                     </div>
-                  </a>
+                  </div>
+                </a>
+              </div>
+              <nav class="main_nav_contaner ml-auto">
+                <ul class="main_nav">
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="about.html">about us</a></li>
+                  <li><a href="courses.html">courses</a></li>
+                  <li class="active"><a href="news.html">news</a></li>
+                  <li><a href="contact.html">contact</a></li>
+                  <li>
+                    <a class="hover" href="./login.html">Login</a>
+                  </li>
+                </ul>
+                <div class="search_button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
-                <nav class="main_nav_contaner ml-auto">
-                  <ul class="main_nav">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about us</a></li>
-                    <li><a href="courses.html">courses</a></li>
-                    <li class="active"><a href="news.html">news</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                    <li>
-                      <a class="hover" href="./login.html">Login/Register</a>
-                    </li>
-                  </ul>
-                  <div class="search_button">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </div>
 
-                  <!-- Hamburger -->
+                <!-- Hamburger -->
 
-                  <div class="hamburger menu_mm">
-                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                <div class="hamburger menu_mm">
+                  <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Search Panel -->
+    <div class="header_search_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+              <form action="#" class="header_search_form">
+                <input type="search" class="search_input" placeholder="Search" required="required" />
+                <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Menu -->
+
+  <div class="menu d-flex flex-column align-items-center justify-content-start text-center menu_mm trans_400">
+    <div class="menu_close_container">
+      <div class="menu_close">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="search">
+      <form action="#" class="header_search_form menu_mm">
+        <input type="search" class="search_input menu_mm" placeholder="Search" required="required" />
+        <button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+          <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+        </button>
+      </form>
+    </div>
+    <nav class="menu_nav">
+      <ul class="menu_mm">
+        <li class="menu_mm"><a href="index.html">Home</a></li>
+
+        <li class="menu_mm"><a href="about.html">about</a></li>
+        <li class="menu_mm"><a href="courses.html">Courses</a></li>
+        <li class="menu_mm"><a href="news.html">News</a></li>
+
+        <li class="menu_mm"><a href="contact.html">Contact</a></li>
+        <li class="menu_mm"><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+    <div class="menu_extra">
+      <div class="menu_phone">
+        <span class="menu_title">phone:</span>(+91) 9513184144
+      </div>
+      <div class="menu_social">
+        <span class="menu_title">follow us</span>
+        <ul>
+          <li>
+            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home -->
+
+  <div class="home">
+    <!-- Background image artist https://unsplash.com/@thepootphotographer -->
+    <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-speed="0.8"
+      style="background: url('images/milestoness.jpg');background-size: cover;"></div>
+    <div class="home_container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="home_content text-center">
+              <div class="home_title title">News</div>
+              <div class="breadcrumbs">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- News -->
+
+  <div class="news">
+    <div class="container">
+      <div class="row">
+        <!-- News Posts -->
+        <div class="col-lg-8">
+          <div class="news_posts">
+
+            <div class="news_post">
+              <div class="news_post_image">
+                <img src="images/news_55.avif" alt="" />
+              </div>
+              <div class="news_post_body">
+                <div class="news_post_date">
+                  <a href="#">April 02, 2023</a>
+                </div>
+                <div class="news_post_title">
+                  <a href="#" class="h2">Books, Kindle or Tablet?</a>
+                </div>
+                <div class="news_post_meta d-flex flex-row align-items-start justify-content-start">
+                  <div class="news_post_author">
+                    By <a href="#">saanvikIT</a>
                   </div>
-                </nav>
+                  <div class="news_post_comments">
+                    <a href="#">12 Comments</a>
+                  </div>
+                  <div class="news_post_tags">
+                    <span>in </span>
+                    <ul>
+                      <li><a href="#">Social Media</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="news_post_text">
+                  <p>
+                    We support our partners in accelerating change in their
+                    industry and within their companies. They maximize our
+                    production-ready custom software development services to
+                    strategize new ideas and achieve true commercial value.
+                    Speak with our professionals now!
+                  </p>
+                </div>
+                <div class="news_post_link"><a href="#">Read More</a></div>
+              </div>
+            </div>
+
+            <!-- News Post -->
+            <div class="news_post">
+              <div class="news_post_image">
+                <img src="images/news_11.jpg" alt="" />
+              </div>
+              <div class="news_post_body">
+                <div class="news_post_date">
+                  <a href="#">April 02, 2023</a>
+                </div>
+                <div class="news_post_title">
+                  <a href="#" class="h2">Why choose an online course?</a>
+                </div>
+                <div class="news_post_meta d-flex flex-row align-items-start justify-content-start">
+                  <div class="news_post_author">
+                    By <a href="#">saanvikIT</a>
+                  </div>
+                  <div class="news_post_comments">
+                    <a href="#">12 Comments</a>
+                  </div>
+                  <div class="news_post_tags">
+                    <span>in </span>
+                    <ul>
+                      <li><a href="#">Social Media</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="news_post_text">
+                  <p>
+                    "Choose Saanvi IT Online Courses for a transformative
+                    learning experience. With cutting-edge curriculum,
+                    expert instructors, and a commitment to practical
+                    skills, we empower you to thrive in the digital
+                    landscape, ensuring a seamless blend of knowledge and
+                    industry relevance for your career success."
+                  </p>
+                </div>
+                <div class="news_post_link"><a href="#">Read More</a></div>
+              </div>
+            </div>
+
+            <!-- News Post -->
+            <div class="news_post">
+              <div class="news_post_image">
+                <img src="images/news_77.jpg" alt="" />
+              </div>
+              <div class="news_post_body">
+                <div class="news_post_date">
+                  <a href="#">April 02, 2023</a>
+                </div>
+                <div class="news_post_title">
+                  <a href="#" class="h2">10 ways to get more productive</a>
+                </div>
+                <div class="news_post_meta d-flex flex-row align-items-start justify-content-start">
+                  <div class="news_post_author">
+                    By <a href="#">saanvikIT</a>
+                  </div>
+                  <div class="news_post_comments">
+                    <a href="#">3 Comments</a>
+                  </div>
+                  <div class="news_post_tags">
+                    <span>in </span>
+                    <ul>
+                      <li><a href="#">Social Media</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="news_post_text">
+                  <p>
+                    "Saanvi IT platform: Elevate productivity with
+                    innovative courses, expert-led instruction, and hands-on
+                    learning experiences, ensuring you gain the skills and
+                    knowledge needed for enhanced professional success in
+                    today's dynamic digital environment."
+                  </p>
+                </div>
+                <div class="news_post_link"><a href="#">Read More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+          <div class="sidebar">
+            <div class="sidebar_search">
+              <form action="courses.html" id="sidebar_search_form" class="sidebar_search_form">
+                <input type="text" class="sidebar_search_input" placeholder="Search" required="required" />
+                <button class="sidebar_search_button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+            <div class="sidebar_categories">
+              <div class="sidebar_title h2">Categories</div>
+              <div class="sidebar_links">
+                <ul>
+                  <li><a href="#">1.Education</a></li>
+                  <li><a href="#">2.Social Media</a></li>
+                  <li><a href="#">3.Lifestyle &Events</a></li>
+                  <li><a href="#">4.Online Learning</a></li>
+                  <li><a href="#">5.Uncategorized</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="sidebar_latest_posts">
+              <div class="sidebar_title h2">Latest Posts</div>
+              <div class="latest_posts">
+                <!-- News Post -->
+                <div class="latest_post d-flex flex-row align-items-start justify-content-start">
+                  <div>
+                    <div class="latest_post_image">
+                      <img src="images/original1/git.jpg" alt="https://unsplash.com/@beccatapert" />
+                    </div>
+                  </div>
+                  <div class="latest_post_body">
+                    <div class="latest_post_date">April 02, 2023</div>
+                    <div class="latest_post_title">
+                      <a href="news.html">Why Choose online education?</a>
+                    </div>
+                    <div class="latest_post_author">
+                      By <a href="#">saanvikIT</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Post -->
+                <div class="latest_post d-flex flex-row align-items-start justify-content-start">
+                  <div>
+                    <div class="latest_post_image">
+                      <img src="images/news_2.jpg" alt="https://unsplash.com/@nbb_photos" />
+                    </div>
+                  </div>
+                  <div class="latest_post_body">
+                    <div class="latest_post_date">April 02, 2018</div>
+                    <div class="latest_post_title">
+                      <a href="news.html">Books, Kindle or tablet?</a>
+                    </div>
+                    <div class="latest_post_author">
+                      By <a href="#">saanvikIT</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Post -->
+                <div class="latest_post d-flex flex-row align-items-start justify-content-start">
+                  <div>
+                    <div class="latest_post_image">
+                      <img src="images/news_3.jpg" alt="https://unsplash.com/@rawpixel" />
+                    </div>
+                  </div>
+                  <div class="latest_post_body">
+                    <div class="latest_post_date">April 02, 2018</div>
+                    <div class="latest_post_title">
+                      <a href="news.html">Why Choose online education?</a>
+                    </div>
+                    <div class="latest_post_author">
+                      By <a href="#">saanvikIT</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- News Post -->
+                <div class="latest_post d-flex flex-row align-items-start justify-content-start">
+                  <div>
+                    <div class="latest_post_image">
+                      <img src="images/original1/Terraform.png" alt="https://unsplash.com/@jtylernix" />
+                    </div>
+                  </div>
+                  <div class="latest_post_body">
+                    <div class="latest_post_date">April 02, 2018</div>
+                    <div class="latest_post_title">
+                      <a href="news.html">Books, Kindle or tablet?</a>
+                    </div>
+                    <div class="latest_post_author">
+                      By <a href="#">saanvikIT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar_elearn">
+              <div class="learn">
+                <div class="learn_background" style="background-image: url(images/Elearn.jpg)"></div>
+                <div class="learn_content d-flex flex-column align-items-center justify-content-end">
+                  <div class="learn_line">Get a 20% Discount</div>
+                  <div class="learn_link">
+                    <a href="register.html">Register now</a>
+                  </div>
+                  <div class="dcount">
+                    <div class="dcount_content d-flex flex-column align-items-center justify-content-center">
+                      <div class="dcount_value">20%</div>
+                      <div class="dcount_text">off</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Header Search Panel -->
-      <div class="header_search_container">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div
-                class="header_search_content d-flex flex-row align-items-center justify-content-end"
-              >
-                <form action="#" class="header_search_form">
-                  <input
-                    type="search"
-                    class="search_input"
-                    placeholder="Search"
-                    required="required"
-                  />
-                  <button
-                    class="header_search_button d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-      <!-- Menu -->
-
-      <div
-        class="menu d-flex flex-column align-items-center justify-content-start text-center menu_mm trans_400"
-      >
-        <div class="menu_close_container">
-          <div class="menu_close">
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-        <div class="search">
-          <form action="#" class="header_search_form menu_mm">
-            <input
-              type="search"
-              class="search_input menu_mm"
-              placeholder="Search"
-              required="required"
-            />
-            <button
-              class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm"
-            >
-              <i class="fa fa-search menu_mm" aria-hidden="true"></i>
-            </button>
-          </form>
-        </div>
-        <nav class="menu_nav">
-          <ul class="menu_mm">
-            <li class="menu_mm"><a href="index.html">Home</a></li>
-           
-            <li class="menu_mm"><a href="about.html">about</a></li>
-            <li class="menu_mm"><a href="courses.html">Courses</a></li>
-            <li class="menu_mm"><a href="news.html">News</a></li>
-            
-            <li class="menu_mm"><a href="contact.html">Contact</a></li>
-            <li class="menu_mm"><a href="./login.html">Login/Register</a></li>
-          </ul>
-        </nav>
-        <div class="menu_extra">
-          <div class="menu_phone">
-            <span class="menu_title">phone:</span>(+91) 9513184144
-          </div>
-          <div class="menu_social">
-            <span class="menu_title">follow us</span>
+      <!-- Pagination -->
+      <!-- <div class="row">
+        <div class="col">
+          <div class="news_pagination">
             <ul>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-pinterest" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-facebook" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa fa-instagram" aria-hidden="true"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-              </li>
+              <li><a href="index.html">01</a></li>
+              <li><a href="about.html">02</a></li>
+              <li><a href="courses.html">03</a></li>
+              <li><a href="news.html">04</a></li>
+              <li><a href="contact.html">05</a></li>
             </ul>
           </div>
         </div>
-      </div>
-
-      <!-- Home -->
-
-      <div class="home">
-        <!-- Background image artist https://unsplash.com/@thepootphotographer -->
-        <div
-          class="home_background parallax_background parallax-window"
-          data-parallax="scroll"
-          data-image-src="images/news.jpg"
-          data-speed="0.8"
-        ></div>
-        <div class="home_container">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="home_content text-center">
-                  <div class="home_title">News</div>
-                  <div class="breadcrumbs">
-                    <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li>News</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- News -->
-
-      <div class="news">
-        <div class="container">
-          <div class="row">
-            <!-- News Posts -->
-            <div class="col-lg-8">
-              <div class="news_posts">
-                
-                <div class="news_post">
-                  <div class="news_post_image">
-                    <img src="images/news_55.avif" alt="" />
-                  </div>
-                  <div class="news_post_body">
-                    <div class="news_post_date">
-                      <a href="#">April 02, 2023</a>
-                    </div>
-                    <div class="news_post_title">
-                      <a href="#">Books, Kindle or Tablet?</a>
-                    </div>
-                    <div
-                      class="news_post_meta d-flex flex-row align-items-start justify-content-start"
-                    >
-                      <div class="news_post_author">
-                        By <a href="#">Ajay Manthri</a>
-                      </div>
-                      <div class="news_post_comments">
-                        <a href="#">12 Comments</a>
-                      </div>
-                      <div class="news_post_tags">
-                        <span>in </span>
-                        <ul>
-                          <li><a href="#">Social Media</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="news_post_text">
-                      <p>
-                        We support our partners in accelerating change in their
-                        industry and within their companies. They maximize our
-                        production-ready custom software development services to
-                        strategize new ideas and achieve true commercial value.
-                        Speak with our professionals now!
-                      </p>
-                    </div>
-                    <div class="news_post_link"><a href="#">Read More</a></div>
-                  </div>
-                </div>
-
-                <!-- News Post -->
-                <div class="news_post">
-                  <div class="news_post_image">
-                    <img src="images/news_11.jpg" alt="" />
-                  </div>
-                  <div class="news_post_body">
-                    <div class="news_post_date">
-                      <a href="#">April 02, 2023</a>
-                    </div>
-                    <div class="news_post_title">
-                      <a href="#">Why choose an online course?</a>
-                    </div>
-                    <div
-                      class="news_post_meta d-flex flex-row align-items-start justify-content-start"
-                    >
-                      <div class="news_post_author">
-                        By <a href="#">Ajay Manthri</a>
-                      </div>
-                      <div class="news_post_comments">
-                        <a href="#">12 Comments</a>
-                      </div>
-                      <div class="news_post_tags">
-                        <span>in </span>
-                        <ul>
-                          <li><a href="#">Social Media</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="news_post_text">
-                      <p>
-                        "Choose Saanvi IT Online Courses for a transformative
-                        learning experience. With cutting-edge curriculum,
-                        expert instructors, and a commitment to practical
-                        skills, we empower you to thrive in the digital
-                        landscape, ensuring a seamless blend of knowledge and
-                        industry relevance for your career success."
-                      </p>
-                    </div>
-                    <div class="news_post_link"><a href="#">Read More</a></div>
-                  </div>
-                </div>
-
-                <!-- News Post -->
-                <div class="news_post">
-                  <div class="news_post_image">
-                    <img src="images/news_77.jpg" alt="" />
-                  </div>
-                  <div class="news_post_body">
-                    <div class="news_post_date">
-                      <a href="#">April 02, 2023</a>
-                    </div>
-                    <div class="news_post_title">
-                      <a href="#">10 ways to get more productive</a>
-                    </div>
-                    <div
-                      class="news_post_meta d-flex flex-row align-items-start justify-content-start"
-                    >
-                      <div class="news_post_author">
-                        By <a href="#">Ajay Manthri</a>
-                      </div>
-                      <div class="news_post_comments">
-                        <a href="#">3 Comments</a>
-                      </div>
-                      <div class="news_post_tags">
-                        <span>in </span>
-                        <ul>
-                          <li><a href="#">Social Media</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="news_post_text">
-                      <p>
-                        "Saanvi IT platform: Elevate productivity with
-                        innovative courses, expert-led instruction, and hands-on
-                        learning experiences, ensuring you gain the skills and
-                        knowledge needed for enhanced professional success in
-                        today's dynamic digital environment."
-                      </p>
-                    </div>
-                    <div class="news_post_link"><a href="#">Read More</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Sidebar -->
-            <div class="col-lg-4">
-              <div class="sidebar">
-                <div class="sidebar_search">
-                  <form
-                    action="courses.html"
-                    id="sidebar_search_form"
-                    class="sidebar_search_form"
-                  >
-                    <input
-                      type="text"
-                      class="sidebar_search_input"
-                      placeholder="Search"
-                      required="required"
-                    />
-                    <button class="sidebar_search_button">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                  </form>
-                </div>
-                <div class="sidebar_categories">
-                  <div class="sidebar_title">Categories</div>
-                  <div class="sidebar_links">
-                    <ul>
-                      <li><a href="#">1.Education</a></li>
-                      <li><a href="#">2.Social Media</a></li>
-                      <li><a href="#">3.Lifestyle &Events</a></li>
-                      <li><a href="#">4.Online Learning</a></li>
-                      <li><a href="#">5.Uncategorized</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="sidebar_latest_posts">
-                  <div class="sidebar_title">Latest Posts</div>
-                  <div class="latest_posts">
-                    <!-- News Post -->
-                    <div
-                      class="latest_post d-flex flex-row align-items-start justify-content-start"
-                    >
-                      <div>
-                        <div class="latest_post_image">
-                          <img
-                            src="images/original1/git.jpg"
-                            alt="https://unsplash.com/@beccatapert"
-                          />
-                        </div>
-                      </div>
-                      <div class="latest_post_body">
-                        <div class="latest_post_date">April 02, 2023</div>
-                        <div class="latest_post_title">
-                          <a href="news.html">Why Choose online education?</a>
-                        </div>
-                        <div class="latest_post_author">
-                          By <a href="#">Ajay Manthri</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- News Post -->
-                    <div
-                      class="latest_post d-flex flex-row align-items-start justify-content-start"
-                    >
-                      <div>
-                        <div class="latest_post_image">
-                          <img
-                            src="images/news_2.jpg"
-                            alt="https://unsplash.com/@nbb_photos"
-                          />
-                        </div>
-                      </div>
-                      <div class="latest_post_body">
-                        <div class="latest_post_date">April 02, 2018</div>
-                        <div class="latest_post_title">
-                          <a href="news.html">Books, Kindle or tablet?</a>
-                        </div>
-                        <div class="latest_post_author">
-                          By <a href="#">Ajay Manthri</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- News Post -->
-                    <div
-                      class="latest_post d-flex flex-row align-items-start justify-content-start"
-                    >
-                      <div>
-                        <div class="latest_post_image">
-                          <img
-                            src="images/news_3.jpg"
-                            alt="https://unsplash.com/@rawpixel"
-                          />
-                        </div>
-                      </div>
-                      <div class="latest_post_body">
-                        <div class="latest_post_date">April 02, 2018</div>
-                        <div class="latest_post_title">
-                          <a href="news.html">Why Choose online education?</a>
-                        </div>
-                        <div class="latest_post_author">
-                          By <a href="#">Ajay Manthri</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- News Post -->
-                    <div
-                      class="latest_post d-flex flex-row align-items-start justify-content-start"
-                    >
-                      <div>
-                        <div class="latest_post_image">
-                          <img
-                            src="images/original1/Terraform.png"
-                            alt="https://unsplash.com/@jtylernix"
-                          />
-                        </div>
-                      </div>
-                      <div class="latest_post_body">
-                        <div class="latest_post_date">April 02, 2018</div>
-                        <div class="latest_post_title">
-                          <a href="news.html">Books, Kindle or tablet?</a>
-                        </div>
-                        <div class="latest_post_author">
-                          By <a href="#">Ajay Manthri</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="sidebar_elearn">
-                  <div class="learn">
-                    <div
-                      class="learn_background"
-                      style="background-image: url(images/Elearn.jpg)"
-                    ></div>
-                    <div
-                      class="learn_content d-flex flex-column align-items-center justify-content-end"
-                    >
-                      <div class="learn_line">Get a 20% Discount</div>
-                      <div class="learn_link">
-                        <a href="register.html">Register now</a>
-                      </div>
-                      <div class="dcount">
-                        <div
-                          class="dcount_content d-flex flex-column align-items-center justify-content-center"
-                        >
-                          <div class="dcount_value">20%</div>
-                          <div class="dcount_text">off</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pagination -->
-          <div class="row">
-            <div class="col">
-              <div class="news_pagination">
-                <ul>
-                  <li><a href="index.html">01</a></li>
-                  <li ><a  href="about.html">02</a></li>
-                  <li><a href="courses.html">03</a></li>
-                  <li><a href="news.html">04</a></li>
-                  <li><a href="contact.html">05</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Footer -->
-
-      
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <!-- About -->
-            <div class="col-lg-3 footer_col">
-              <div class="footer_about">
-                <div class="logo_container">
-                  <a href="#">
-                    <div
-                      class="logo_content d-flex flex-row align-items-end justify-content-start"
-                    >
-                      <div style="width: 150px" class="logo_img">
-                        <img src="images/logo.png" alt="" />
-                      </div>
-                      <div class="logo_text"></div>
-                    </div>
-                  </a>
-                </div>
-                <div class="footer_about_text">
-                  <p>
-                    Saanvik IT is to make the world of coding more approachable
-                    and understandable for aspirational developers everywhere.
-                  </p>
-                </div>
-                <div class="footer_social">
-                  <ul>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-google-plus" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-pinterest" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-facebook" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i class="fa fa-twitter" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              
-            </div>
-  
-            <div class="col-lg-3 footer_col">
-              <div class="footer_links">
-                <div class="footer_title">Quick menu</div>
-                <ul class="footer_list">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About us</a></li>
-                  
-                  <li><a href="#">Services</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="#">Facts</a></li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 footer_col">
-              <div class="footer_links">
-                <div class="footer_title">Useful Links</div>
-                <ul class="footer_list">
-                  <li><a href="courses.html">Courses</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="news.html">News</a></li>
-                  
-                  <li><a href="#">Links</a></li>
-                  <li><a href="#">FAQ</a></li>
-                </ul>
-              </div>
-            </div>
-  
-            <div class="col-lg-3 footer_col">
-              <div class="footer_contact">
-                <div class="footer_title">Contact Us</div>
-                <div class="footer_contact_info">
-                  <div class="footer_contact_item">
-                    <div class="footer_contact_title">Address:</div>
-                    <div class="footer_contact_line">
-                      We works, 1 st Floor, Hyderabad, Telangana 500032
-                    </div>
-                  </div>
-                  <div class="footer_contact_item">
-                    <div class="footer_contact_title">Phone:</div>
-                    <div class="footer_contact_line">(+91) 9513184144​</div>
-                  </div>
-                  <div class="footer_contact_item">
-                    <div class="footer_contact_title">Email:</div>
-                    <div class="footer_contact_line">
-                      saanvikIT@gmail.com​
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="copy_right text-center">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          All rights reserved | This template is made with
-  
-          <i class="fa fa-heart-o" aria-hidden="true"></i> by
-          <a href="www.thepatternscompany.com" target="_blank"
-            >The Patterns Infotech</a
-          >
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        </div>
-      </footer>
+      </div> -->
     </div>
+  </div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="styles/bootstrap4/popper.js"></script>
-    <script src="styles/bootstrap4/bootstrap.min.js"></script>
-    <script src="plugins/easing/easing.js"></script>
-    <script src="plugins/parallax-js-master/parallax.min.js"></script>
-    <script src="js/courses.js"></script>
-  </body>
+  <!-- Footer -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- About -->
+        <div class="col-lg-3 footer_col">
+          <div class="footer_about">
+            <div class="logo_container">
+              <a href="#">
+                <div>
+                  <img src="homeslides/SANVIK IT (2)/V smilez dental (1)1.png" alt="" style="width:200px;" />
+                </div>
+              </a>
+            </div>
+            <div class="footer_about_text">
+              <p>
+                Saanvik IT is to make the world of coding more approachable
+                and understandable for aspirational developers everywhere.
+              </p>
+            </div>
+            <div class="footer_social">
+              <ul>
+                <li>
+                  <a href="tel:+919513184144"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/saanvikit/?originalSubdomain=in"><i class="fa fa-linkedin"
+                      aria-hidden="true"></i></a>
+                </li>
+
+                <li>
+                  <a href="https://www.facebook.com/SAANVIKIT/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3903586000956!2d78.37824587385361!3d17.441020783455354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93547b7c9039%3A0x852fa9e76e4ca65!2sWeWork!5e0!3m2!1sen!2sin!4v1700754861182!5m2!1sen!2sin"><i
+                      class="fa fa-map-marker" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--<div class="copyright">
+                  
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | This template is made with
+    
+                  <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                  <a href="www.thepatternscompany.com" target="_blank"
+                    >The Patterns Infotech</a
+                  >
+                  
+                </div>-->
+        </div>
+
+        <div class="col-lg-3 footer_col">
+          <div class="footer_links">
+            <div class="footer_title">Quick menu</div>
+            <ul class="footer_list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#">Facts</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 footer_col">
+          <div class="footer_links">
+            <div class="footer_title">Useful Links</div>
+            <ul class="footer_list">
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="#">Links</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 footer_col">
+          <div class="footer_contact">
+            <div class="footer_title">Contact Us</div>
+            <div class="footer_contact_info">
+              <div class="footer_contact_item">
+                <div class="footer_contact_title">Address:</div>
+                <div class="footer_contact_line">
+                  We works, 1 st Floor, Hyderabad, Telangana 500032
+                </div>
+              </div>
+              <div class="footer_contact_item">
+                <div class="footer_contact_title">Phone:</div>
+                <div class="footer_contact_line">(+91) 9513184144​</div>
+              </div>
+              <div class="footer_contact_item">
+                <div class="footer_contact_title">Email:</div>
+                <div class="footer_contact_line">saanvikIT@gmail.com​</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy_right text-center">
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      All rights reserved | This template is made with
+
+      by
+      <a href="www.thepatternscompany.com" target="_blank">The Patterns Infotech</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    </div>
+  </footer>
+  </div>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="styles/bootstrap4/popper.js"></script>
+  <script src="styles/bootstrap4/bootstrap.min.js"></script>
+  <script src="plugins/easing/easing.js"></script>
+  <script src="plugins/parallax-js-master/parallax.min.js"></script>
+
+  <script src="js/courses.js"></script>
+  <script src="js/all.js"></script>
+</body>
+
 </html>

@@ -1,116 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>About us</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Elearn project" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="styles/bootstrap4/bootstrap.min.css"
-    />
-    <link
-      href="plugins/font-awesome-4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="plugins/video-js/video-js.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" type="text/css" href="styles/about.css" />
-    <link rel="stylesheet" type="text/css" href="styles/about_responsive.css" />
-  </head>
-  <body>
-    <div class="super_container">
-      <!-- Header -->
 
-      <header class="header">
-        <!-- Header Content -->
-        <div class="header_container">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div
-                  class="header_content d-flex flex-row align-items-center justify-content-start"
-                >
-                  <div class="logo_container">
-                    <a href="#">
-                      <div
-                        class="logo_content d-flex flex-row align-items-end justify-content-start"
-                      >
-                        <div style="width: 150px" class="logo_img">
-                         <a href="index.html"><img                          
-                            src="images/logo.png"
-                            alt=""
-                          /></a> 
-                        </div>
+<head>
+  <title>About us</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Elearn project" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css" />
+  <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="styles/about.css" />
+  <link rel="stylesheet" type="text/css" href="styles/all.css" />
+  <link rel="stylesheet" type="text/css" href="styles/about_responsive.css" />
+</head>
+
+<body>
+  <div class="super_container">
+    <!-- Header -->
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <img src="images/logo_icon.png" alt="" style="width:150px;" />
+      <div class="loader"></div>
+    </div>
+    <!--loader-->
+    <header class="header">
+      <!-- Top Bar -->
+
+      <!-- Header Content -->
+      <div class="header_container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="header_content d-flex flex-row align-items-center justify-content-around">
+                <div class="logo_container">
+                  <a href="#">
+                    <div class="logo_content d-flex flex-row align-items-end justify-content-start">
+                      <div style="width: 150px;" class="logo_img">
+                        <a href="index.html"><img src="images/logo.png" style="" /></a>
                       </div>
-                    </a>
+                    </div>
+                  </a>
+                </div>
+                <nav class="main_nav_contaner ml-auto">
+                  <ul class="main_nav">
+                    <li><a href="index.html">home</a></li>
+                    <li class="active"><a href="about.html">about us</a></li>
+                    <li><a href="courses.html">courses</a></li>
+                    <li><a href="news.html">news</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                      <a class="hover" href="./login.html">Login</a>
+                    </li>
+                  </ul>
+                  <div class="search_button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
                   </div>
-                  <nav class="main_nav_contaner ml-auto active">
-                    <ul class="main_nav">
-                      <li><a href="index.html">home</a></li>
-                      <li class="active"><a href="about.html">about us</a></li>
-                      <li><a href="courses.html">courses</a></li>
-                      <li><a href="news.html">news</a></li>
-                      <li><a href="contact.html">contact</a></li>
-                      <li>
-                        <a class="hover" href="./login.html">Login/Register</a>
-                      </li>
-                    </ul>
-                    <div class="search_button">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </div>
 
-                    <!-- Hamburger -->
+                  <!-- Hamburger -->
 
-                    <div class="hamburger menu_mm">
-                      <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
-                    </div>
-                  </nav>
-                </div>
+                  <div class="hamburger menu_mm">
+                    <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
+                  </div>
+                </nav>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Header Search Panel -->
-        <div class="header_search_container">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div
-                  class="header_search_content d-flex flex-row align-items-center justify-content-end"
-                >
-                  <form action="#" class="header_search_form">
-                    <input
-                      type="search"
-                      class="search_input"
-                      placeholder="Search"
-                      required="required"
-                    />
-                    <button
-                      class="header_search_button d-flex flex-column align-items-center justify-content-center"
-                    >
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                  </form>
-                </div>
+      <!-- Header Search Panel -->
+      <div class="header_search_container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
+                <form action="#" class="header_search_form">
+                  <input type="search" class="search_input" placeholder="Search" required="required" />
+                  <button class="header_search_button d-flex flex-column align-items-center justify-content-center">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- Menu -->
+    <!-- Menu -->
 
-      <div
-      class="menu d-flex flex-column align-items-center justify-content-start text-center menu_mm trans_400"
-    >
+    <div class="menu d-flex flex-column align-items-center justify-content-start text-center menu_mm trans_400">
       <div class="menu_close_container">
         <div class="menu_close">
           <div></div>
@@ -119,15 +100,8 @@
       </div>
       <div class="search">
         <form action="#" class="header_search_form menu_mm">
-          <input
-            type="search"
-            class="search_input menu_mm"
-            placeholder="Search"
-            required="required"
-          />
-          <button
-            class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm"
-          >
+          <input type="search" class="search_input menu_mm" placeholder="Search" required="required" />
+          <button class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
             <i class="fa fa-search menu_mm" aria-hidden="true"></i>
           </button>
         </form>
@@ -135,11 +109,11 @@
       <nav class="menu_nav">
         <ul class="menu_mm">
           <li class="menu_mm"><a href="index.html">Home</a></li>
-         
+
           <li class="menu_mm"><a href="about.html">about</a></li>
           <li class="menu_mm"><a href="courses.html">Courses</a></li>
           <li class="menu_mm"><a href="news.html">News</a></li>
-          
+
           <li class="menu_mm"><a href="contact.html">Contact</a></li>
           <li class="menu_mm"><a href="./login.html">Login/Register</a></li>
         </ul>
@@ -152,19 +126,13 @@
           <span class="menu_title">follow us</span>
           <ul>
             <li>
-              <a href="#"
-                ><i class="fa fa-pinterest" aria-hidden="true"></i
-              ></a>
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </li>
             <li>
-              <a href="#"
-                ><i class="fa fa-facebook" aria-hidden="true"></i
-              ></a>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </li>
             <li>
-              <a href="#"
-                ><i class="fa fa-instagram" aria-hidden="true"></i
-              ></a>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </li>
             <li>
               <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -174,147 +142,138 @@
       </div>
     </div>
 
-      <!-- Home -->
+    <!-- Home -->
 
-      <div class="home">
-        <!-- Background image artist https://unsplash.com/@thepootphotographer -->
-        <div
-          class="home_background parallax_background parallax-window"
-          data-parallax="scroll"
-          data-image-src="images/milestoness.jpg"
-          data-speed="0.8"
-        ></div>
-        <div class="home_container">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="home_content text-center">
-                  <div class="home_title">About us</div>
-                  <div class="breadcrumbs">
-                    <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li>About us</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- About -->
-
-      <div class="about">
+    <div class="home">
+      <!-- Background image artist https://unsplash.com/@thepootphotographer -->
+      <div class="home_background parallax_background parallax-window" data-parallax="scroll"
+        data-image-src="images/milestoness.jpg" data-speed="0.8"></div>
+      <div class="home_container">
         <div class="container">
-          <div class="row about_row row-lg-eq-height">
-            <div class="col-lg-6">
-              <div class="about_content">
-                <div class="about_title">Our Platform's main goal</div>
-                <div class="about_text">
-                  Saanvik IT Learning Course strives to equip learners with
-                  practical, industry-relevant skills, fostering innovation and
-                  empowering individuals to excel in today's dynamic
-                  professional landscape. Our goal is to bridge the gap between
-                  education and industry needs, ensuring students are
-                  well-prepared for future challenges.
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="about_image">
-                <img
-                  src="images/about_1.jpg"
-                  alt="https://unsplash.com/@jtylernix"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row about_row row-lg-eq-height">
-            <div class="col-lg-6 order-lg-1 order-2">
-              <div class="about_image">
-                <img src="images/about_11.jpg" alt="" />
-              </div>
-            </div>
-            <div class="col-lg-6 order-lg-2 order-1">
-              <div class="about_content">
-                <div class="about_title">Saanvik IT Vision</div>
-                <div class="about_text">
-                  <p>
-                    "We see a world in which anyone can use code to express
-                    their creativity, no matter what background they come from.
-                    Our courses are made to give you the tools you need to
-                    succeed in the ever changing field of software development."
-                  </p>
+          <div class="row">
+            <div class="col">
+              <div class="home_content text-center">
+                <div class="home_title title">About us</div>
+                <div class="breadcrumbs">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Milestones -->
+    <!-- About -->
 
-      <div class="milestones">
-        <!-- Background image artis https://unsplash.com/@thepootphotographer -->
-        <div
-          class="parallax_background parallax-window"
-          data-parallax="scroll"
-          data-image-src="images/milestone_111.jpg"
-          data-speed="0.8"
-        ></div>
-        <div class="container">
-          <div class="row milestones_container">
-            <!-- Milestone -->
-            <div class="col-lg-3 milestone_col">
-              <div class="milestone text-center">
-                <div class="milestone_icon">
-                  <img src="images/milestone_1.svg" alt="" />
-                </div>
-                <div class="milestone_counter" data-end-value="200">0</div>
-                <div class="milestone_text">Online Courses</div>
+    <div class="about">
+      <div class="container">
+        <div class="row about_row row-lg-eq-height">
+          <div class="col-lg-6">
+            <div class="about_content">
+              <div class="about_title h2">Our Platform's main goal</div>
+              <div class="about_text">
+                Saanvik IT Learning Course strives to equip learners with
+                practical, industry-relevant skills, fostering innovation and
+                empowering individuals to excel in today's dynamic
+                professional landscape. Our goal is to bridge the gap between
+                education and industry needs, ensuring students are
+                well-prepared for future challenges.
               </div>
             </div>
-
-            <!-- Milestone -->
-            <div class="col-lg-3 milestone_col">
-              <div class="milestone text-center">
-                <div class="milestone_icon">
-                  <img src="images/milestone_2.svg" alt="" />
-                </div>
-                <div class="milestone_counter" data-end-value="15K">0</div>
-                <div class="milestone_text">Students</div>
-              </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about_image">
+              <img src="images/about_1.jpg" alt="https://unsplash.com/@jtylernix" />
             </div>
-
-            <!-- Milestone -->
-            <div class="col-lg-3 milestone_col">
-              <div class="milestone text-center">
-                <div class="milestone_icon">
-                  <img src="images/milestone_3.svg" alt="" />
-                </div>
-                <div class="milestone_counter" data-end-value="26">0</div>
-                <div class="milestone_text">Teachers</div>
-              </div>
+          </div>
+        </div>
+        <div class="row about_row row-lg-eq-height">
+          <div class="col-lg-6 order-lg-1 order-2">
+            <div class="about_image">
+              <img src="images/about_11.jpg" alt="" />
             </div>
-
-            <!-- Milestone -->
-            <div class="col-lg-3 milestone_col">
-              <div class="milestone text-center">
-                <div class="milestone_icon">
-                  <img src="images/milestone_4.svg" alt="" />
-                </div>
-                <div class="milestone_counter" data-end-value="17">0</div>
-                <div class="milestone_text">Countries</div>
+          </div>
+          <div class="col-lg-6 order-lg-2 order-1">
+            <div class="about_content">
+              <div class="about_title h2">Saanvik IT Vision</div>
+              <div class="about_text">
+                <p>
+                  "We see a world in which anyone can use code to express
+                  their creativity, no matter what background they come from.
+                  Our courses are made to give you the tools you need to
+                  succeed in the ever changing field of software development."
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Teachers -->
+    <!-- Milestones -->
+    <div class="heading">
+      <h2 class="text-center h2" style="">
+        Our Best Figures</h2>
+    </div>
+    <div class="milestones">
+      <!-- Background image artis https://unsplash.com/@thepootphotographer -->
+      <div class="parallax_background parallax-window" data-parallax="scroll" data-speed="0.8"></div>
+      <div class="container">
+        <div class="row milestones_container">
+          <!-- Milestone -->
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="images/milestone_1.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-end-value="200">0</div>
+              <div class="milestone_text">Online Courses</div>
+            </div>
+          </div>
 
-      <!--<div class="teachers">
+          <!-- Milestone -->
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="images/milestone_2.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-end-value="15K">0</div>
+              <div class="milestone_text">Students</div>
+            </div>
+          </div>
+
+          <!-- Milestone -->
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="images/milestone_3.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-end-value="26">0</div>
+              <div class="milestone_text">Teachers</div>
+            </div>
+          </div>
+
+          <!-- Milestone -->
+          <div class="col-lg-3 milestone_col">
+            <div class="milestone text-center">
+              <div class="milestone_icon">
+                <img src="images/milestone_4.svg" alt="" />
+              </div>
+              <div class="milestone_counter" data-end-value="17">0</div>
+              <div class="milestone_text">Countries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teachers -->
+
+    <!--<div class="teachers">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -462,7 +421,7 @@
 
     <!-- Footer -->
 
-    
+
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -471,13 +430,8 @@
             <div class="footer_about">
               <div class="logo_container">
                 <a href="#">
-                  <div
-                    class="logo_content d-flex flex-row align-items-end justify-content-start"
-                  >
-                    <div style="width: 150px" class="logo_img">
-                      <img src="images/logo.png" alt="" />
-                    </div>
-                    <div class="logo_text"></div>
+                  <div>
+                    <img src="homeslides/SANVIK IT (2)/V smilez dental (1)1.png" alt="" style="width:200px;" />
                   </div>
                 </a>
               </div>
@@ -490,29 +444,38 @@
               <div class="footer_social">
                 <ul>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-google-plus" aria-hidden="true"></i
-                    ></a>
+                    <a href="tel:+919513184144"><i class="fa fa-phone" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-pinterest" aria-hidden="true"></i
-                    ></a>
+                    <a href="https://www.linkedin.com/in/saanvikit/?originalSubdomain=in"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.facebook.com/SAANVIKIT/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><i class="fa fa-facebook" aria-hidden="true"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-twitter" aria-hidden="true"></i
-                    ></a>
+                    <a
+                      href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3903586000956!2d78.37824587385361!3d17.441020783455354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93547b7c9039%3A0x852fa9e76e4ca65!2sWeWork!5e0!3m2!1sen!2sin!4v1700754861182!5m2!1sen!2sin"><i
+                        class="fa fa-map-marker" aria-hidden="true"></i></a>
                   </li>
                 </ul>
               </div>
             </div>
-            
+            <!--<div class="copyright">
+                
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+  
+                <i class="fa fa-heart-o" aria-hidden="true"></i> by
+                <a href="www.thepatternscompany.com" target="_blank"
+                  >The Patterns Infotech</a
+                >
+                
+              </div>-->
           </div>
 
           <div class="col-lg-3 footer_col">
@@ -521,7 +484,6 @@
               <ul class="footer_list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a></li>
-               
                 <li><a href="#">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#">Facts</a></li>
@@ -536,7 +498,6 @@
                 <li><a href="courses.html">Courses</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="news.html">News</a></li>
-                
                 <li><a href="#">Links</a></li>
                 <li><a href="#">FAQ</a></li>
               </ul>
@@ -559,9 +520,7 @@
                 </div>
                 <div class="footer_contact_item">
                   <div class="footer_contact_title">Email:</div>
-                  <div class="footer_contact_line">
-                    saanvikIT@gmail.com​
-                  </div>
+                  <div class="footer_contact_line">saanvikIT@gmail.com​</div>
                 </div>
               </div>
             </div>
@@ -576,10 +535,8 @@
         </script>
         All rights reserved | This template is made with
 
-        <i class="fa fa-heart-o" aria-hidden="true"></i> by
-        <a href="www.thepatternscompany.com" target="_blank"
-          >The Patterns Infotech</a
-        >
+        by
+        <a href="www.thepatternscompany.com" target="_blank">The Patterns Infotech</a>
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </div>
     </footer>
@@ -594,6 +551,8 @@
     <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
     <script src="plugins/easing/easing.js"></script>
     <script src="plugins/parallax-js-master/parallax.min.js"></script>
+    <script src="js/all.js"></script>
     <script src="js/about.js"></script>
-  </body>
+</body>
+
 </html>

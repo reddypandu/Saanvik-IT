@@ -43,7 +43,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  background: rgba(11, 52, 75, 255);
+  background: #35bbef;
 }
 div {
   display: block;
@@ -393,6 +393,7 @@ section {
 
 .header_container {
   width: 100%;
+  background-color: rgba(11, 52, 75, 255);
 }
 .header_content {
   height: 90px;
@@ -835,7 +836,7 @@ section {
 
 .news {
   width: 100%;
-  background: rgba(11, 52, 75, 255);
+  /* background: rgba(11, 52, 75, 255); */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -860,7 +861,7 @@ section {
 .news_post_date a {
   font-size: 12px;
   font-weight: 600;
-  color: rgba(119, 191, 0, 255);
+  color: rgba(11, 52, 75, 255);
   line-height: 0.75;
 }
 .news_post_title {
@@ -899,7 +900,7 @@ section {
   margin-left: 16px;
 }
 .news_post_comments a {
-  color: rgba(119, 191, 0, 255);
+  color: rgba(11, 52, 75, 255);
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -919,7 +920,7 @@ section {
   display: inline-block;
 }
 .news_post_tags ul li a {
-  color: rgba(119, 191, 0, 255);
+  color: rgba(11, 52, 75, 255);
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -939,7 +940,7 @@ section {
   position: relative;
   font-size: 14px;
   font-weight: 700;
-  color: rgba(119, 191, 0, 255);
+  color: rgba(11, 52, 75, 255);
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
@@ -1108,7 +1109,7 @@ section {
 .latest_post_date {
   font-size: 12px;
   font-weight: 600;
-  color: rgba(119, 191, 0, 255);
+  color: rgba(11, 52, 75, 255);
   line-height: 0.75;
 }
 .latest_post_title {
@@ -1245,13 +1246,15 @@ section {
 
 .footer {
   width: 100%;
-
   padding-top: 60px;
+  border-top: 1px solid white;
+  /*padding-bottom: 90px;*/
+  /* background-color: rgba(11, 52, 75, 255); */
 }
 .footer .logo_container {
-  position: absolute;
+  /* position: absolute;
   top: -20px;
-  left: 0;
+  left: 0; */
 }
 .footer_about_text {
   padding-top: 49px;
@@ -1263,27 +1266,40 @@ section {
   display: inline-block;
 }
 .footer_social ul li:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 15px;
 }
 .footer_social ul li a i {
-  font-size: 15px;
-  color: rgba(119, 191, 0, 255);
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
+  background-color: rgba(119, 191, 0, 255);
 }
 .footer_social ul li a i:hover {
-  color: white;
+  color: rgba(11, 52, 75, 255);
+  background-color: white;
 }
-
+.copyright {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(145, 145, 249);
+  margin-top: 10px;
+}
 .footer_title {
-  font-size: 15px;
-  font-weight: 600;
-  color: rgba(119, 191, 0, 255);
-  border-bottom: solid gray 1px;
-  flex: right;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: 900;
+  border-bottom: solid rgba(119, 191, 0, 255) 1px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px black, 2px 2px 4px black, 7px 1px 6px black,
+    8px 2px 10px white, 4px 2px 4px black, 4px 2px 4px white;
+  margin: 0;
 }
 .footer_list {
   margin-top: 26px;
@@ -1292,8 +1308,8 @@ section {
   margin-bottom: 15px;
 }
 .footer_list li a {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   color: white;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -1317,20 +1333,29 @@ section {
   color: rgba(119, 191, 0, 255);
 }
 .footer_contact_line {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: white;
   margin-top: 3px;
+}
+@media (max-width: 476px) {
+  .home {
+    height: 25vh;
+  }
+}
+.logo_img img {
+  width: 180px;
 }
 .copy_right {
   height: 80px;
   width: 100%;
   padding-top: 30px;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
   color: white;
+  border-top: 1px solid white;
 }
 @media (max-width: 476px) {
   .home {
