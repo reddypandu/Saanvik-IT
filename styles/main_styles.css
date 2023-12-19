@@ -1864,14 +1864,53 @@ section {
   width: 180px;
 }
 .copy_right {
-  height: 80px;
+  /* height: 80px; */
   width: 100%;
   padding-top: 30px;
   font-size: 16px;
   margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 1rem;
   color: white;
   border-top: 1px solid white;
   background-color: rgba(11, 52, 75, 255);
+}
+/*whatsapp*/
+.whatsapp-div {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  z-index: 999;
+  animation: what 5s linear infinite;
+  transition: 0.5s all;
+}
+
+.whatsapp-div a {
+}
+
+.whatsapp-div i {
+  font-size: 2.5rem;
+  padding: 10px;
+  background-color: rgba(119, 191, 0, 255);
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px black, 0 3px 6px black, 0 4px 7px rgba(119, 191, 0, 255);
+}
+
+.whatsapp-div:hover i {
+  background-color: #35bbef;
+  color: white;
+}
+
+@keyframes what {
+  0%,
+  50% {
+    margin-bottom: 3px;
+    transform: scale(1.01);
+  }
+
+  100% {
+    margin-bottom: 0px;
+  }
 }
