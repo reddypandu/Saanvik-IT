@@ -6,17 +6,22 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #333333;
   height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-form {
   /* margin: 150px 150px 0px 100px;*/
-  width: 100%;
+  width: 500px;
   background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex: 1 1 100%;
   align-items: stretch;
+  flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 0 20px 6px #090b6f85;
   height: 100%;
@@ -38,14 +43,14 @@ body {
 }
 .box-form .left .overlay {
   padding: 30px;
-  width: 100%;
+  width: 500px;
   height: 100%;
   background: rgba(11, 52, 75, 255);
   overflow: hidden;
   box-sizing: border-box;
 }
 .box-form .left .overlay h1 {
-  font-size: 5vmax;
+  font-size: 2rem;
   line-height: 1.928;
   font-weight: 900;
   margin-top: 40px;
@@ -54,6 +59,7 @@ body {
 .box-form .left .overlay span p {
   margin-top: 30px;
   font-weight: 900;
+  word-break: break-all;
 }
 .box-form .left .overlay span a {
   background: rgba(119, 191, 0, 255);
@@ -74,11 +80,11 @@ body {
 }
 @media (max-width: 1400px) {
   .box-form .right {
-    width: 100%;
+    width: 400px;
   }
 }
 .box-form .right h5 {
-  font-size: 4vmax;
+  font-size: 3rem;
   line-height: 0;
 }
 
@@ -102,7 +108,7 @@ body {
   overflow: hidden;
 }
 .box-form .right input {
-  width: 100%;
+  width: auto;
   padding: 5px;
   margin-top: 25px;
   font-size: 16px;
@@ -203,4 +209,15 @@ label input[type="checkbox"] {
   outline: 0;
   height: 49px;
   width: 180px;
+}
+@media (max-width: 992px) {
+  .box-form {
+    width: 100%;
+  }
+  .box-form .right {
+    width: 100%;
+  }
+  .box-form .left .overlay {
+    width: 100%;
+  }
 }

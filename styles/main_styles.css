@@ -464,7 +464,7 @@ section {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
-  background-color: #fff;
+  background-color: #35bbef;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -486,20 +486,20 @@ section {
 }
 @keyframes l5 {
   0% {
-    box-shadow: 20px 0 #35bbef, -20px 0 #0002;
-    background: #35bbef;
+    box-shadow: 20px 0 white, -20px 0 #0002;
+    background: white;
   }
   33% {
-    box-shadow: 20px 0 #35bbef, -20px 0 #0002;
+    box-shadow: 20px 0 white, -20px 0 #0002;
     background: #0002;
   }
   66% {
-    box-shadow: 20px 0 #0002, -20px 0 #35bbef;
+    box-shadow: 20px 0 #0002, -20px 0 white;
     background: #0002;
   }
   100% {
-    box-shadow: 20px 0 #0002, -20px 0 #35bbef;
-    background: #35bbef;
+    box-shadow: 20px 0 #0002, -20px 0 white;
+    background: white;
   }
 }
 /*********************************
