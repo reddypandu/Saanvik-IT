@@ -267,10 +267,31 @@ a {
 .featured_content {
   padding-top: 20px;
   padding-bottom: 10px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px; */
 }
 .featured_text {
-  color: white;
+  color: rgba(11, 52, 75, 255);
+  background-color: white;
   font-size: 20px;
+  /* border: 1px solid rgba(11, 52, 75, 255); */
+  padding: 8px;
+  box-shadow: 0 2px 4px white, 0 3px 5px black;
+}
+@media (max-width: 768px) {
+  .featured_content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .featured_content {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
 }
 .featured_row {
   /* border-bottom: 1px solid white; */
@@ -317,4 +338,94 @@ a {
   100% {
     margin-bottom: 0px;
   }
+}
+
+.carousel-item img {
+  background-color: white;
+  margin-top: 3rem;
+}
+
+.detail-course .owl-item {
+  box-shadow: 2px 4px 5px grey;
+}
+
+.detail-course .owl-item:hover {
+  box-shadow: 0px 4px 5px #35bbef, 0px 4px 5px #35bbef, 0px 4px 5px #35bbef,
+    0px 4px 5px #35bbef, 2px 4px 5px #35bbef, 2px 4px 5px #35bbef,
+    0px 5px 10px #35bbef, 0px 5px 10px #35bbef;
+  /* transform: scaleY(1.01); */
+}
+
+.more {
+  /* width: 130px; */
+}
+
+.more a {
+  color: #35bbef;
+}
+
+.more a:hover {
+  text-decoration: underline;
+}
+
+.whatsapp-div p {
+  box-shadow: 0 2px 4px black, 0 3px 5px black;
+}
+
+/* .whatsapp-div[title] {
+  background-color: #35bbef;
+} */
+.topscroll {
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  z-index: 999;
+  display: none;
+}
+
+.topscroll i {
+  background-color: rgba(119, 191, 0, 255);
+  padding: 8px;
+  font-size: 20px;
+  color: rgba(11, 52, 75, 255);
+  cursor: pointer;
+  box-shadow: 0 2px 4px black, 0 3px 5px black;
+}
+
+.topscroll:hover i {
+  background-color: white;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 10%;
+  left: 20%;
+  width: 50%;
+  padding: 10px;
+  background-color: #333333c5;
+  color: #fff;
+  text-align: center;
+  z-index: 399;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* position: relative; */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-close {
+  /* position: absolute;
+  top: 0; */
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 20px;
 }

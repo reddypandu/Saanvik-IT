@@ -38,3 +38,49 @@ var loader = function () {
 };
 
 loader();
+//top going button
+document.addEventListener("DOMContentLoaded", function () {
+  var mybutton = document.querySelector(".topscroll");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (
+      document.body.scrollTop > 200 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // Function to smoothly scroll to the top
+  function scrollToTop() {
+    var currentPosition =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentPosition > 0) {
+      window.requestAnimationFrame(scrollToTop);
+      window.scrollTo(0, currentPosition - currentPosition / 8); // Adjust the divisor for speed control
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", function () {
+    scrollToTop();
+  });
+});
+function acceptCookies() {
+  // Set a cookie to remember user's choice
+  document.cookie =
+    "cookies_accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+
+  // Hide the cookie banner
+  document.getElementById("cookieBanner").style.display = "none";
+}
+
+// Check if the user has previously accepted cookies
+if (document.cookie.indexOf("cookies_accepted=true") === -1) {
+  // Show the cookie banner if not accepted
+  document.getElementById("cookieBanner").style.display = "block";
+}
+console.log(document.cookie);

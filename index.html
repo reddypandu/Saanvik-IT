@@ -18,6 +18,7 @@
   <link href="plugins/video-js/video-js.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
   <link rel="stylesheet" type="text/css" href="styles/responsive.css" />
+  <link rel="stylesheet" type="text/css" href="styles/all.css" />
 
   <!--carousel-->
   <link rel="stylesheet" href="magicscroll/magicscroll.css" />
@@ -161,27 +162,126 @@
       background-color: white;
       padding: 15px;
     }
+
+    .carousel-item {
+      position: relative;
+      height: 100vh;
+      max-width: 100vw;
+      background: url("homeslides/SANVIK\ IT\ \(2\)/5.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .carousel-item .carousel_text {
+      position: absolute;
+      top: 30%;
+      left: 8%;
+      width: 50%;
+    }
+
+    .carousel-item .carousel_text h2 {
+      font-weight: 800;
+      font-size: 40px;
+    }
+
+    .carousel-item .carousel_text p {
+      color: rgba(119, 191, 0, 255);
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    .carousel-item .carousel_text .btns {
+      padding-top: 1rem;
+    }
+
+    .carousel-item .carousel_text .btns button {
+      background-color: rgba(11, 52, 75, 255);
+    }
+
+    .carousel-control-next {
+      height: 30px;
+      top: 50%;
+      right: -10px;
+    }
+
+    .carousel-control-prev {
+      height: 30px;
+      top: 50%;
+      left: -10px;
+    }
+
+    .carousel-item .carousel_text .btns button a {
+      color: white;
+      font-weight: 600;
+    }
+
+    @media(max-width:700px) {
+      .carousel-item .carousel_text {
+        top: 38%;
+        left: 2%;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      .carousel-item .carousel_text h2 {
+        font-size: 25px;
+      }
+
+      .carousel-item .carousel_text p {
+        font-size: 15px;
+      }
+
+      .carousel-item .carousel_text .btns button {
+        padding: 8px 12px;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: none;
+      }
+
+      .carousel-control-next {
+
+        right: -50px;
+      }
+
+      .carousel-control-prev {
+
+        left: -50px;
+      }
+
+    }
   </style>
   <!-- Home -->
   <!-- slider -->
 
 
-  <div class="container-fluid mt-5">
+  <div class="container-fluid mt-5" style="padding: 0;">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="homeslides/SANVIK IT (2)/1.png" class="d-block w-100" alt="Slide 1">
+          <!-- <img src="homeslides/SANVIK IT (2)/5.jpg" class="d-block w-100" alt="Slide 1"> -->
+          <div class="carousel_text">
+            <h2>Online Course learn</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa, natus minus dignissimos impedit
+              inventore cumque neque itaque.</p>
+            <div class="btns">
+              <button><a href="contact.html">Contact Now</a></button>
+              <button><a href="courses.html">Learn More</a></button>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img src="homeslides/SANVIK IT (2)/10.png" class="d-block w-100" alt="Slide 2">
         </div>
         <div class="carousel-item">
           <img src="homeslides/SANVIK IT (2)/11.png" class="d-block w-100" alt="Slide 3">
-        </div>
+        </div> -->
         <!-- Add more carousel items as needed -->
 
         <!-- Example: Adding 7 more items -->
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img src="homeslides/SANVIK IT (2)/12.png" class="d-block w-100" alt="Slide 4">
         </div>
         <div class="carousel-item">
@@ -237,7 +337,7 @@
         </div>
         <div class="carousel-item">
           <img src="homeslides/SANVIK IT (2)/9.png" class="d-block w-100" alt="Slide 10">
-        </div>
+        </div> -->
       </div>
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <span style="background-color: rgba(11, 52, 75, 255);" class="carousel-control-prev-icon"
@@ -252,37 +352,31 @@
     </div>
   </div>
   <style>
-    .carousel-item img {
-      background-color: white;
-      margin-top: 3rem;
-    }
 
-    .detail-course .owl-item {
-      box-shadow: 2px 4px 5px grey;
-    }
-
-    .detail-course .owl-item:hover {
-      box-shadow: 0px 4px 5px #35bbef, 0px 4px 5px #35bbef, 0px 4px 5px #35bbef, 0px 4px 5px #35bbef, 2px 4px 5px #35bbef, 2px 4px 5px #35bbef, 0px 5px 10px #35bbef, 0px 5px 10px #35bbef;
-      /* transform: scaleY(1.01); */
-    }
-
-    .more {
-      /* width: 130px; */
-    }
-
-    .more a {
-      color: #35bbef;
-    }
-
-    .more a:hover {
-      text-decoration: underline;
-    }
   </style>
+  <script>
+
+  </script>
   <!--whatsapp-->
-  <div class="whatsapp-div">
-    <a href="https://wa.me/+919513184144"><i class="fa fa-whatsapp"></i></a>
+  <div class="whatsapp-div" title="connect with us">
+    <a href="https://wa.me/+919513184144">
+      <!-- <i class="fa fa-whatsapp"></i> -->
+      <p style="background-color: rgba(119, 191, 0, 255);padding:6px;border-radius: 20px;">Chat With Us!</p>
+    </a>
   </div>
   <!--whatsapp-->
+  <!--topbtn-->
+  <div class="topscroll">
+    <i class="fa fa-arrow-up"></i>
+  </div>
+  <!--topbtn-->
+  <div id="cookieBanner" class="cookie-banner">
+    <p>This website uses cookies. By continuing to use this site, you accept our use of cookies.</p>
+    <button onclick="acceptCookies()">Accept</button>
+    <!-- <i class="fa fa-close" onclick="acceptCookies()"></i> -->
+  </div>
+
+
   <div class="heading">
     <h2 class="text-center h2" style="">
       Our Courses</h2>
@@ -1434,6 +1528,7 @@
   <script src="plugins/video-js/Youtube.min.js"></script>
   <script src="plugins/parallax-js-master/parallax.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/all.js"></script>
 </body>
 
 </html>
